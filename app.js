@@ -11,6 +11,7 @@ mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+// mongoose.Promise = global.Promise;
 const con = mongoose.connection;
 con.on("open", () => {
   console.log("Database connected");
